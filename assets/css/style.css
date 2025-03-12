@@ -811,3 +811,233 @@ strong {
 }
 
 /* ===cta-section-end=== */
+
+/* ===funfact-section-start=== */
+
+.funfact-section {
+  padding: 45px 0px;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+}
+
+.funfact-section .container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.funfact-section .funfact-item {
+  padding: 20px 0px;
+  transition: 0.5s linear;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.funfact-section .funfact-item .icon {
+  padding: 15px;
+  background-color: var(--white);
+  border-radius: 20px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  position: relative;
+  z-index: 1;
+}
+
+.funfact-section .funfact-item .icon::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  z-index: -1;
+}
+
+.funfact-section .funfact-item:hover {
+  animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-2px);
+  }
+
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-2px);
+  }
+
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+.funfact-section .funfact-item .content {
+  padding-top: 15px;
+}
+
+.funfact-section .funfact-item .content .counter-value,
+.funfact-section .funfact-item .content span {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+}
+
+.funfact-section .funfact-item .content p {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 10px;
+}
+
+/* ===funfact-section-start=== */
+
+/* ===testimonial-section-start=== */
+
+.testimonial-section {
+  padding: 90px 0px;
+  background-color: #eceaea;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../images/pattern-2.png);
+  background-size: cover;
+  z-index: -1;
+}
+
+.testimonial-section .section-title {
+  text-align: center;
+  margin-bottom: 45px;
+  text-transform: capitalize;
+}
+
+.testimonial-section .section-title span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.testimonial-section .section-title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.testimonial-section .testimonials-item .content {
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+.testimonial-section .testimonials-item p {
+  color: var(--dark);
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.testimonial-section .testimonials-item .icon {
+  color: var(--grey);
+  font-size: 30px;
+}
+
+.testimonial-section .testimonials-item .icon-left {
+  color: var(--grey);
+  font-size: 30px;
+}
+
+.testimonial-section .testimonials-item .detail {
+  padding: 10px 0px;
+}
+
+.testimonial-section .testimonials-item .detail h3 {
+  font-size: 18px;
+  color: var(--dark);
+  margin-bottom: 5px;
+}
+
+.testimonial-section .testimonials-item .detail span {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.testimonial-section .testimonials-item .icon {
+  text-align: end;
+  display: flex;
+  justify-content: end;
+}
+
+.testimonial-section .testimonials-item {
+  margin: 20px 10px;
+  box-shadow: #0070f06b 0px 0px 0.25em, #0070f069 0px 0.25em 1em;
+  border-radius: 10px;
+  position: relative;
+}
+
+.testimonial-section .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  background-color: var(--dark);
+  margin: 0px 3px;
+  border-radius: 50%;
+}
+
+.testimonial-section .owl-dots .owl-dot.active {
+  background-color: var(--primary-color);
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.testimonial-section .owl-dots {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* testimonial-section-end */
+
+/* ===testimonial-section-end=== */
