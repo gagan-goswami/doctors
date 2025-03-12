@@ -15,6 +15,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.section-title img {
+  height: 40px;
+}
+
 iframe,
 video {
   width: 100%;
@@ -289,7 +293,15 @@ strong {
   overflow: hidden;
   padding: 90px 0px;
   height: auto;
-  min-height: 500px;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #02033a31;
+  z-index: -1;
 }
 
 .hero-section .hero-caption h1 {
@@ -445,6 +457,7 @@ strong {
 
 .our-medicals-section .medicals-images {
   position: relative;
+  margin-bottom: 25px;
 }
 
 .our-medicals-section .medicals-images .image-box-2 {
@@ -466,6 +479,10 @@ strong {
   font-size: 18px;
   font-weight: 600;
   color: var(--primary-color);
+}
+
+.our-medicals-section .medicals-content img {
+  height: 40px;
 }
 
 .our-medicals-section .medicals-content h2 {
@@ -768,6 +785,10 @@ strong {
 .cta-section .row {
   display: flex;
   align-items: center;
+}
+
+.cta-section .cta-content {
+  margin-top: 25px;
 }
 
 .cta-section .cta-content span {
@@ -1090,7 +1111,6 @@ strong {
 }
 
 .footer-section .footer-item {
-  padding: 10px;
   margin-bottom: 15px;
 }
 
