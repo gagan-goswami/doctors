@@ -79,6 +79,7 @@ strong {
   background-color: var(--white);
   position: relative;
   z-index: 9999999;
+  overflow: hidden;
 }
 
 .header-section .is-sticky-menu {
@@ -332,6 +333,7 @@ strong {
 .feature-section {
   padding: 90px 0px;
   background-color: var(--white);
+  overflow: hidden;
 }
 
 .feature-section .section-title {
@@ -429,6 +431,7 @@ strong {
   background-color: #eceaea;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .our-medicals-section::before {
@@ -509,6 +512,7 @@ strong {
 .services-section {
   padding: 90px 0px;
   background-color: var(--white);
+  overflow: hidden;
 }
 
 .services-section .section-title {
@@ -758,6 +762,7 @@ strong {
 
 .cta-section {
   background-color: var(--primary-color);
+  overflow: hidden;
 }
 
 .cta-section .row {
@@ -833,7 +838,7 @@ strong {
   position: relative;
   overflow: hidden;
   background-color: var(--primary-color);
-  border-radius: 4px;
+  border-radius: 20px;
   margin: 15px 0px;
   display: flex;
   justify-content: center;
@@ -936,6 +941,7 @@ strong {
   background-color: #eceaea;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .testimonial-section::before {
@@ -1038,6 +1044,183 @@ strong {
   margin-top: 50px;
 }
 
-/* testimonial-section-end */
-
 /* ===testimonial-section-end=== */
+
+/* ===artner-section-start=== */
+
+.partner-section {
+  padding: 45px 0px;
+}
+
+.partner-section .partner-image {
+  height: 150px;
+  width: 150px;
+}
+
+.partner-section .partner-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ===partner-section-end=== */
+
+/*====================================*/
+/*========== footer-section =========*/
+/*====================================*/
+
+.footer-section {
+  background-color: var(--dark);
+  padding: 90px 0px 10px 0px;
+  color: var(--white);
+}
+
+.footer-section .footer-content img {
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.footer-section .footer-content p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer-section .footer-item {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-section .footer-item h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-section .footer-item .contact-links,
+.footer-section .footer-item .footer-social,
+.footer-section .footer-item .pages-links,
+.footer-section .footer-item .service-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section .footer-item .contact-links a,
+.footer-section .footer-item .pages-links a,
+.footer-section .footer-item .service-links a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-section .footer-item .footer-social a {
+  font-size: 24px;
+  color: var(--primary-color);
+  line-height: 50px;
+}
+
+.footer-section .footer-item .contact-links li,
+.footer-section .footer-item .footer-social li,
+.footer-section .footer-item .pages-links li,
+.footer-section .footer-item .service-links li {
+  color: var(--white);
+  text-decoration: none;
+  margin: 5px 0px;
+  font-weight: 300;
+  font-size: 16px;
+  transition: 1s;
+}
+
+.footer-section .footer-item .contact-links li i {
+  margin-right: 20px;
+}
+
+.footer-section .footer-item .contact-links li:hover i {
+  color: var(--primary-color);
+}
+
+.footer-section .footer-item .footer-social {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-section .footer-item .footer-social li {
+  font-size: 18px;
+  height: 45px;
+  width: 45px;
+  background-color: var(--white);
+  color: var(--dark);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.footer-section .footer-item .footer-social li a:hover {
+  color: var(--primary-color);
+}
+
+.footer-section .copy-right {
+  border-top: 1px solid rgba(255, 255, 255, 0.128);
+  margin-top: 25px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.footer-section .footer-item .pages-links li:hover,
+.footer-section .footer-item .service-links li:hover {
+  margin-left: 5px;
+  transition: 1s;
+  color: var(--primary-color);
+}
+
+.footer-section .footer-item .pages-links li:hover a,
+.footer-section .footer-item .service-links li:hover a {
+  transition: 1s;
+  color: var(--primary-color);
+}
+
+.footer-section .top-button .top {
+  background-color: var(--primary-color);
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  right: 1em;
+  bottom: 0.3em;
+  position: fixed;
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+  z-index: 9999;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer-section .top-button .top {
+  animation: bounce-in 2s ease infinite;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  70% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
